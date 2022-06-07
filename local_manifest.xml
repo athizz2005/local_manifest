@@ -2,7 +2,6 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="x" fetch="https://github.com/SonalSingh18" />
    
   <!-- Remove HALs -->
                 <!-- remove-project name="LineageOS/android_vendor_lineage" /-->
@@ -19,7 +18,6 @@
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-18.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-18.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-18.1" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="x" revision="master" />
    
 </manifest>
 
