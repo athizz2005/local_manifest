@@ -35,7 +35,7 @@
                 <project path="system/security" name="android_system_security" remote="f" revision="lineage-18.1" />
                 <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="f" revision="lineage-18.1" />
                 <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="f" revision="lineage-18.1" />
-                <project path="system/netd" name="android_system_netd" remote="s" revision="lineage-18.1" />
+                <project path="system/netd" name="android_system_netd" remote="f" revision="lineage-18.1" />
                 <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="f" revision="lineage-18.1" />
                 <project path="packages/overlays/Lineage" name="android_packages_overlays_Lineage" remote="f" revision="lineage-18.1" />
                 <project path="art" name="android_art" remote="f" revision="lineage-18.1" />
