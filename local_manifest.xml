@@ -2,41 +2,25 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="f" fetch="https://github.com/ForkLineageOS" />
    
   <!-- Remove HALs -->
-                <remove-project name="LineageOS/android_vendor_lineage" />
+                <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <remove-project name="LineageOS/android_system_core" />
-                <remove-project name="LineageOS/android_build" />
-                <remove-project name="LineageOS/android_packages_apps_Launcher3" />
-                <remove-project name="LineageOS/android_device_lineage_sepolicy" />
-                <remove-project name="LineageOS/android_system_netd" />
-                <remove-project name="LineageOS/android_packages_apps_Messaging" />
-                <remove-project name="LineageOS/android_packages_overlays_Lineage" />
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="11" />
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="11" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="11" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="11" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="twelve-kcal" />
-   <!-- fork -->
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="12" />
+   
+   <!-- addition -->
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-18.1" />
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="f" revision="lineage-18.1" />
-                <project path="system/core" name="android_system_core" remote="f" revision="lineage-18.1" />
-                <project path="build/make" name="android_build" remote="f" revision="lineage-18.1" />
-                <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="f" revision="lineage-18.1" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="f" revision="lineage-18.1" />
-                <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="f" revision="lineage-18.1" />
-                <project path="system/security" name="android_system_security" remote="f" revision="lineage-18.1" />
-                <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="f" revision="lineage-18.1" />
-                <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="f" revision="lineage-18.1" />
-                <project path="system/netd" name="android_system_netd" remote="f" revision="lineage-18.1" />
-                <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="f" revision="lineage-18.1" />
-                <project path="packages/overlays/Lineage" name="android_packages_overlays_Lineage" remote="f" revision="lineage-18.1" />
-
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-18.1" />
+                <project path="system/core" name="android_system_core" remote="s" revision="lineage-18.1" />
+                <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-19.1" / -->
    
 </manifest>
 
