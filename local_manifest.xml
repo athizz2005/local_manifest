@@ -3,12 +3,14 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="n" fetch="https://github.com/NusantaraROM-Devices" />
-       <remote  name="k" fetch="https://github.com/LineageOS" />
+        <remote  name="k" fetch="https://github.com/LineageOS" />
+        <remote name="ArrowOS-Devices" fetch="https://github.com/ArrowOS-Devices" />
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12L" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="n" revision="13" />
                 <project path="kernel/xiaomi/miatoll" name="android_kernel_xiaomi_sm6250" remote="k" revision="lineage-19.1" />
+                <project path="hardware/xiaomi" name="android_hardware_xiaomi" revision="staging/arrow-13.0" remote="ArrowOS-Devices" />
 
 </manifest>
 
