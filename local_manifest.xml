@@ -7,7 +7,7 @@
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12L" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
+                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="n" revision="13" />
                 <project path="kernel/xiaomi/miatoll" name="android_kernel_xiaomi_sm6250" remote="k" revision="lineage-19.1" />
 
 </manifest>
