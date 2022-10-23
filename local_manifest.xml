@@ -10,7 +10,7 @@
                 <remove-project name="LineageOS/android_system_core" />
    
   <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="sail" />
+                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="sailb" />
    	          <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12L" />
    	          <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="12" />
    
