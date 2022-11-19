@@ -17,7 +17,7 @@
                 <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" />
    
    <!-- addition -->
-                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+                
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-20.0" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-20.0" />
                 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
