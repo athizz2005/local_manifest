@@ -2,7 +2,7 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="clang" fetch="https://github.com/kdrag0n" />
+       
 
    
   <!-- Remove HALs -->
@@ -13,10 +13,7 @@
                 <remove-project name="LineageOS/android_system_core" />
                 <remove-project name="LineageOS/android_build" />
 
-  <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="13" />
+ 
                 <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" />
    
    <!-- addition -->
