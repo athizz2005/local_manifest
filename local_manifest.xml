@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   
-        <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-       
+  
 
-   
-  <!-- Remove HALs -->
-                <remove-project name="LineageOS/android_packages_apps_Settings" />
-                <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
-                <remove-project name="LineageOS/android_frameworks_base" />
-                <remove-project name="LineageOS/android_vendor_lineage" />
-                <remove-project name="LineageOS/android_system_core" />
-                <remove-project name="LineageOS/android_build" />
+<remote name="all"
+            fetch="https://github.com/"
 
- 
-                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" />
-   
-   <!-- addition -->
-                
-                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-20.0" />
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-20.0" />
-                <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
-                <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
-                <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
-                <project path="build/make" name="android_build" remote="s" revision="lineage-20.0" groups="pdk" >
-                <copyfile src="core/root.mk" dest="Makefile" />
-                <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-                <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-                <linkfile src="core" dest="build/core" />
-                <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-                <linkfile src="target" dest="build/target" />
-                <linkfile src="tools" dest="build/tools" />
-                </project>
-   
+  <remote name="allgit"
+            fetch="https://gitlab.com/"
+
+  <!-- Trees -->
+  
+  <project path="device/xiaomi/miatoll" name="FlashLabz/android_device_xiaomi_miatoll-2" remote="all" revision="rice" />
+  <project path="device/xiaomi/sm6250-common" name="rayavanindra/android_device_xiaomi_sm6250-common" remote="all" revision="13" />
+  <project path="vendor/xiaomi/miatoll" name="rayavanindra/android_vendor_xiaomi_miatoll" remote="all" revision="13" />
+  <project path="kernel/xiaomi/sm6250" name="rayavanindra/android_kernel_xiaomi_sm6250" remote="all" revision="main" />
+  <project path="vendor/xiaomi/sm6250-common" name="rayavanindra/android_vendor_xiaomi_sm6250-common" remote="all" revision="13" />
+
+ <!-- (Clang) -->
+  
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="allgit" revision="master" />
+
+  <!-- Toolchain -->
+
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+
 </manifest>
 
 
