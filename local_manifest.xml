@@ -10,10 +10,10 @@
 
   <!-- Trees -->
   
-  <project path="device/xiaomi/miatoll" name="FlashLabz/android_device_xiaomi_miatoll-2" remote="all" revision="rice" />
-  <project path="device/xiaomi/sm6250-common" name="rayavanindra/android_device_xiaomi_sm6250-common" remote="all" revision="13" />
+  <project path="device/xiaomi/miatoll" name="athizz2005/android_device_xiaomi_miatoll-1" remote="all" revision="cherish" />
+  <project path="device/xiaomi/sm6250-common" name="rayavanindra/android_device_xiaomi_sm6250-common" remote="all" revision="cherish" />
   <project path="vendor/xiaomi/miatoll" name="rayavanindra/android_vendor_xiaomi_miatoll" remote="all" revision="13" />
-  <project path="kernel/xiaomi/sm6250" name="rayavanindra/android_kernel_xiaomi_sm6250" remote="all" revision="main" />
+  <project path="kernel/xiaomi/sm6250" name="athizz2005/android_kernel_xiaomi_sm6250" remote="all" revision="main" />
   <project path="vendor/xiaomi/sm6250-common" name="rayavanindra/android_vendor_xiaomi_sm6250-common" remote="all" revision="13" />
 
  <!-- (Clang) -->
