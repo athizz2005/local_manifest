@@ -5,7 +5,7 @@
 <remote name="all"
             fetch="https://github.com/"
 
-  <remote name="allgit"
+<remote name="allgit"
             fetch="https://gitlab.com/"
 
   <!-- Trees -->
