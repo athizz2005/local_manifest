@@ -12,7 +12,6 @@
 
   <!-- Clang -->
 
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="tejassinggh/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86/clang-WeebX" name="tejassinggh/clang-weebx" remote="gitlab" revision="release/17.x" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
   
 </manifest>
