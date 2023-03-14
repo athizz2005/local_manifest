@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   
-        <remove-project name="hardware_xiaomi" />
-   
-        <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="b" fetch="https://github.com/ProjectBlaze-Devices" />
 
-   
-                                      
-  <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="b" revision="13" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="b" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="13" />
-   
-   <!-- addition -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-   <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" />
-   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
-   
-   
+  <!-- Trees -->
+  
+  <project path="device/xiaomi/miatoll" name="athizz2005/android_device_xiaomi_miatoll-1" remote="github" revision="cherish" clone-depth="1" />
+  <project path="device/xiaomi/sm6250-common" name="athizz2005/cosmic_dt" remote="github" revision="thirteen" clone-depth="1" />
+  <project path="vendor/xiaomi/miatoll" name="FujitoraSensei/vendor_xiaomi_miatoll" remote="github" revision="13" clone-depth="1" />
+  <project path="kernel/xiaomi/sm6250" name="athizz2005/android_kernel_xiaomi_sm6250" remote="github" revision="4.14.192" clone-depth="1" />
+  <project path="vendor/xiaomi/sm6250-common" name="FujitoraSensei/vendor_xiaomi_sm6250-common" remote="github" revision="13" clone-depth="1" />
+  <project path="vendor/xiaomi/miuicamera" name="SonalSingh18/vendor_xiaomi_miuicamera" remote="gitlab" revision="thirteen" clone-depth="1" />
+
+  <!-- Clang -->
+
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="SwapnilVicky/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
 </manifest>
-
 
               
  
