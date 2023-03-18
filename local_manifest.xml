@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-
-
 
   <!-- Trees -->
   
-  <project path="device/xiaomi/miatoll" name="athizz2005/android_device_xiaomi_miatoll-1" remote="github" revision="cherish" />
-  <project path="device/xiaomi/sm6250-common" name="rayavanindra/android_device_xiaomi_sm6250-common" remote="github" revision="cherish" />
-  <project path="vendor/xiaomi/miatoll" name="rayavanindra/android_vendor_xiaomi_miatoll" remote="github" revision="13" />
-  <project path="kernel/xiaomi/sm6250" name="athizz2005/android_kernel_xiaomi_sm6250" remote="github" revision="4.14.192" />
-  <project path="vendor/xiaomi/sm6250-common" name="rayavanindra/android_vendor_xiaomi_sm6250-common" remote="github" revision="13" />
-
- <!-- (Clang) -->
-
-  <!-- Toolchain -->
+  <project path="device/xiaomi/violet" name="athizz2005/device_xiaomi_violet" remote="github" revision="thirteen" clone-depth="1" />
+  <project path="vendor_xiaomi_violet" name="SuperiorOS-Devices/vendor_xiaomi_violet" remote="github" revision="thirteen" clone-depth="1" />
+  <project path="kernel/xiaomi/violet" name="SuperiorOS-Devices/kernel/xiaomi/violet" remote="github" revision="thirteen" clone-depth="1" />
+  <project path="vendor/xiaomi-firmware/violet" name="Joker-V2/vendor_xiaomi-firmware_violet" remote="gitlab" revision="thirteen" clone-depth="1" />
+  <project path="vendor/MiuiCamera" name="Joker-V2/android_vendor_MiuiCamera" remote="gitlab" revision="thirteen" clone-depth="1" />
+  
+<!-- Clang -->
 
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
-  
-</manifest>
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="SwapnilVicky/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
 
+<!-- [ Source Repos ] -->   
+             <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" />
+             <project path="external/chromium-webview/prebuilt/arm64" name="CatOS-Tiramisu/android_external_chromium-webview_prebuilt_arm64" revision="main" remote="github" clone-depth="1" />
+             
+</manifest>
 
               
  
