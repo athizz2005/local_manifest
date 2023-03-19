@@ -3,7 +3,7 @@
 
   <!-- Trees -->
   
-  <project path="device/xiaomi/violet" name="athizz2005/device_xiaomi_violet" remote="github" revision="thirteen" clone-depth="1" />
+  <project path="device/xiaomi/violet" name="athizz2005/T_device_xiaomi_violet" remote="github" revision="thirteen" clone-depth="1" />
   <project path="vendor_xiaomi_violet" name="athizz2005/vendor_xiaomi_violet" remote="github" revision="thirteen" clone-depth="1" />
   <project path="kernel/xiaomi/violet" name="athizz2005/kernel/xiaomi/violet" remote="github" revision="thirteen" clone-depth="1" />
   <project path="vendor/xiaomi-firmware/violet" name="Joker-V2/vendor_xiaomi-firmware_violet" remote="gitlab" revision="thirteen" clone-depth="1" />
