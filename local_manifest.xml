@@ -42,7 +42,7 @@
 <project path="vendor/MiuiCamera" name="vendor_MiuiCamera" remote="nalinish" revision="thirteen" />
 <project path="kernel/xiaomi/violet" name="kernel_xiaomi_violet" remote="athizz" revision="thirteen" />
 <project path="vendor/xiaomi-firmware/violet" name="vendor_xiaomi-firmware_violet" remote="kibria" revision="thirteen" />
-<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r487747" remote="joker" revision="master" />
+<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="joker" revision="master" />
    
    <!-- addition -->
 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
