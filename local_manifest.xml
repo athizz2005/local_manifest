@@ -1,92 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   
-<remote  name="athizz"         fetch="https://github.com/athizz2005" />
-<remote  name="r450784d"       fetch="https://gitlab.com/SwapnilVicky" />
-<remote  name="EXTENDED"       fetch="https://github.com/orgs/SuperiorExtended" />
-<remote  name="crdroid-gitlab" fetch="https://gitlab.com/crdroidandroid" />
-<remote  name="kibria"         fetch="https://gitlab.com/kibria5" />
-<remote  name="gitlab"         fetch="https://gitlab.com" />
-<remote  name="clang"          fetch="https://github.com/kdrag0n" />
-<remote  name="nalinish"       fetch="https://gitlab.com/NRanjan-17" />
-<remote  name="joker"          fetch="https://gitlab.com/Joker-V2" />
-<remote  name="poision"        fetch="https://github.com/project-poison" />   
-
-  <!-- Remove -->
-<remove-project name="SuperiorOS/android_packages_apps_SuperiorLab" />
-<remove-project name="SuperiorOS/android_frameworks_base" />
-<remove-project name="SuperiorOS/android_art" />
-<remove-project name="SuperiorOS/android_vendor_superior" />
-<remove-project name="SuperiorOS/android_packages_overlays_Themes" />
-<remove-project name="SuperiorOS/android_build" />
-<remove-project name="SuperiorOS/android_packages_apps_Launcher3" />
-<remove-project name="SuperiorOS/android_packages_services_Telecomm" />
-<remove-project name="SuperiorOS/android_frameworks_av" />
-<remove-project name="SuperiorOS/android_frameworks_native" />
-<remove-project name="SuperiorOS/android_packages_apps_Settings" />
-<remove-project name="SuperiorOS/android_device_superior_sepolicy" />
-<remove-project name="SuperiorOS/android_packages_apps_GameSpace" />
-<remove-project name="SuperiorOS/android_packages_modules_Permission" />
-<remove-project name="SuperiorOS/android_vendor_support" />
-<remove-project name="SuperiorOS/android_packages_apps_ThemePicker" />
-<remove-project name="SuperiorOS/android_packages_apps_RepainterServicePriv" />
-<remove-project name="SuperiorOS/android_vendor_prebuilts" />
-<remove-project name="SuperiorOS/android_build_soong" />
-<remove-project name="SuperiorOS/android_packages_apps_WallpaperPicker2" />
-<remove-project name="SuperiorOS/android_hardware_interfaces" />
-
-
-
-  <!-- Trees --> 
-<project path="device/xiaomi/violet" name="android_device_xiaomi_violet" remote="athizz" revision="cirrus" />
-<project path="vendor/xiaomi/violet" name="vendor_xiaomi_violet" remote="athizz2005" revision="dolby" />
-<project path="vendor/MiuiCamera" name="vendor_MiuiCamera" remote="nalinish" revision="thirteen" />
-<project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="poision" revision="xcal" />
-<project path="vendor/xiaomi-firmware/violet" name="vendor_xiaomi-firmware_violet" remote="kibria" revision="thirteen" />
-<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="joker" revision="master" />
-   
-   <!-- addition -->
-<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-<project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
-<project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="EXTENDED" revision="QPR3" />
-<project path="frameworks/base" name="android_frameworks_base" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/SuperiorLab" name="android_packages_apps_SuperiorLab" remote="EXTENDED" revision="QPR3" />
-<project path="android_art" name="android_art" remote="EXTENDED" revision="QPR3" />
-<project path="vendor/superior" name="android_vendor_superior" remote="EXTENDED" revision="QPR3" />
-<project path="packages/overlay/Themes" name="android_packages_overlays_Themes" remote="EXTENDED" revision="QPR3" />
-<project path="build/make" name="android_build" remote="EXTENDED" revision="QPR3" />
-<copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
- </project>
-<project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="EXTENDED" revision="QPR3" />
-  <linkfile src="res" dest="packages/apps/Launcher3/res-icons" />
-  </project>
-<project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="EXTENDED" revision="QPR3" />
-<project path="frameworks/av" name="android_frameworks_av" remote="EXTENDED" revision="QPR3" />
-<project path="frameworks/native" name="android_frameworks_native" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="EXTENDED" revision="QPR3" />
-<project path="device/superior/sepolicy" name="android_device_superior_sepolicy" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="EXTENDED" revision="QPR3" />
-<project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="EXTENDED" revision="QPR3" />
-<project path="vendor/support" name="android_vendor_support" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/RepainterService" name="android_packages_apps_RepainterService" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="EXTENDED" revision="QPR3" />
-<project path="vendor/prebuilt" name="android_vendor_prebuilts" remote="EXTENDED" revision="QPR3" />
-<project path="build/soong" name="android_build_soong" remote="EXTENDED" revision="QPR3" />
- <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-<project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="EXTENDED" revision="QPR3" />
-<project path="packages/apps/RepainterService" name="android_packages_apps_RepainterService" remote="EXTENDED" revision="QPR3" />
-<project path="prebuilt/kernel-build-tools" name="prebuilts_kernel-build-tools" remote="EXTENDED" revision="QPR3" />
-<project path="hardware/interfaces" name="android_hardware_interfaces" remote="EXTENDED" revision="QPR3" />
-
+<remote name="Extended"       fetch="https://github.com/SuperiorExtended/"/>
+<remote name="athizz"         fetch="https://github.com/athizz2005"/>
+<remote name="crdroid-gitlab" fetch="https://gitlab.com/crdroidandroid"/>
+<remote name="kibria"         fetch="https://gitlab.com/kibria5"/>
+<remote name="gitlab"         fetch="https://gitlab.com"/>
+<remote name="clang"          fetch="https://github.com/kdrag0n"/>
+<remote name="nalinish"       fetch="https://gitlab.com/NRanjan-17"/>
+<remote name="joker"          fetch="https://gitlab.com/Joker-V2"/>
+<remote name="poision"        fetch="https://github.com/project-poison"/>
+<!--  Remove  -->
+<remove-project name="android_packages_apps_SuperiorLab"/>
+<remove-project name="android_frameworks_base"/>
+<remove-project name="android_art"/>
+<remove-project name="android_vendor_superior"/>
+<remove-project name="android_packages_overlays_Themes"/>
+<remove-project name="android_build"/>
+<remove-project name="android_packages_apps_Launcher3"/>
+<remove-project name="android_packages_services_Telecomm"/>
+<remove-project name="android_frameworks_av"/>
+<remove-project name="android_frameworks_native"/>
+<remove-project name="android_packages_apps_Settings"/>
+<remove-project name="android_device_superior_sepolicy"/>
+<remove-project name="android_packages_apps_GameSpace"/>
+<remove-project name="android_packages_modules_Permission"/>
+<remove-project name="android_vendor_support"/>
+<remove-project name="android_packages_apps_ThemePicker"/>
+<remove-project name="android_packages_apps_RepainterServicePriv"/>
+<remove-project name="android_vendor_prebuilts"/>
+<remove-project name="android_build_soong"/>
+<remove-project name="android_packages_apps_WallpaperPicker2"/>
+<remove-project name="android_hardware_interfaces"/>
+<remove-project name="prebuilts_kernel-build-tools"/>
+<remove-project name="android_packages_services_OmniJaws"/>
+<remove-project name="android_packages_apps_ParallelSpace"/>
+<!--  Device Trees  -->
+<project path="device/xiaomi/violet" name="android_device_xiaomi_violet" remote="athizz" revision="cirrus"/>
+<project path="vendor/xiaomi/violet" name="vendor_xiaomi_violet" remote="athizz2005" revision="dolby"/>
+<project path="vendor/MiuiCamera" name="vendor_MiuiCamera" remote="nalinish" revision="thirteen"/>
+<project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="poision" revision="xcal"/>
+<project path="vendor/xiaomi-firmware/violet" name="vendor_xiaomi-firmware_violet" remote="kibria" revision="thirteen"/>
+<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="joker" revision="master"/>
+<project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0"/>
+<!--  Build repos  -->
+<project path="build/make" name="android_build" remote="Extended" revision="QPR3">
+<copyfile src="core/root.mk" dest="Makefile"/>
+<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+<linkfile src="core" dest="build/core"/>
+<linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+<linkfile src="target" dest="build/target"/>
+<linkfile src="tools" dest="build/tools"/>
 </project>
-   
+<project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="Extended" revision="QPR3">
+<linkfile src="root.bp" dest="Android.bp"/>
+<linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+</project>
+<project path="device/superior/sepolicy" name="android_device_superior_sepolicy" remote="Extended" revision="QPR3"/>
+<!--  Framework repos  -->
+<project path="frameworks/av" name="android_frameworks_av" remote="Extended" revision="QPR3"/>
+<project path="frameworks/base" name="android_frameworks_base" remote="Extended" revision="QPR3"/>
+<project path="frameworks/native" name="android_frameworks_native" remote="Extended" revision="QPR3"/>
+<project path="hardware/interfaces" name="android_hardware_interfaces" remote="Extended" revision="QPR3"/>
+<project path="vendor/superior" name="android_vendor_superior" remote="Extended" revision="QPR3"/>
+<project path="vendor/support" name="android_vendor_support" remote="Extended" revision="QPR3"/>
+<project path="vendor/prebuilts" name="android_vendor_prebuilts" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/RepainterService" name="android_packages_apps_RepainterService" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/SuperiorLab" name="android_packages_apps_SuperiorLab" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="Extended" revision="QPR3"/>
+<project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="Extended" revision="QPR3"/>
+<project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="Extended" revision="QPR3"/>
+<project path="packages/overlays/Themes" name="android_packages_overlays_Themes" remote="Extended" revision="QPR3"/>
+<project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="Extended" revision="QPR3"/>
+<project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="Extended" revision="QPR3"/>
+<project path="prebuilts/kernel-build-tools" name="prebuilts_kernel-build-tools" remote="Extended" revision="QPR3"/>
 </manifest>
