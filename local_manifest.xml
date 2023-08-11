@@ -42,6 +42,7 @@
 <project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="joker" revision="master"/>
 <project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0"/>
 <!--  Build repos  -->
+<project path="art" name="android_art" remote="Extended" revision="QPR3">
 <project path="build/make" name="android_build" remote="Extended" revision="QPR3">
 <copyfile src="core/root.mk" dest="Makefile"/>
 <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
